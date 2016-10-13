@@ -125,6 +125,7 @@ var VisualizerMicro;
             this.audioSource.removeEventListener(loadEventString, _onLoad);
         }
 
+        this.context.close()
         this.alreadyLoaded = false;
         this.loadedCallback = false;
         this.loadEventListenerCreated = false;
